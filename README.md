@@ -1,8 +1,8 @@
 #### Legal
 [免责声明](DISCLAIMER.md) | [开源许可证](LICENSE)
 
-# RMT (Ruo Meng Tu)
-**Read this in other languages: [中文](README.md).**
+# RMT-Setting
+**Read this in other languages: [English](README.en.md).**
 
 ## 许可协议
 
