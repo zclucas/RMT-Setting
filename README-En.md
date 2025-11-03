@@ -1,3 +1,6 @@
+#### Legal
+[Disclaimer](DISCLAIMER.md) | [License](LICENSE)
+
 ## License
 
 The configuration files, content and resources in this project are licensed under the **CC BY-NC-SA 4.0** license.
