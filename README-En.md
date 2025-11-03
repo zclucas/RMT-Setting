@@ -1,6 +1,9 @@
 #### Legal
 [Disclaimer](DISCLAIMER.md) | [License](LICENSE)
 
+# RMT-Setting
+**Read this in other languages: [中文](README.md).**
+
 ## License
 
 The configuration files, content and resources in this project are licensed under the **CC BY-NC-SA 4.0** license.

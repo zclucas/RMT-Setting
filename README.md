@@ -1,6 +1,9 @@
 #### Legal
 [免责声明](DISCLAIMER.md) | [开源许可证](LICENSE)
 
+# RMT (Ruo Meng Tu)
+**Read this in other languages: [中文](README.md).**
+
 ## 许可协议
 
 本项目中的配置、内容及资源使用 **CC BY-NC-SA 4.0** 协议授权。
