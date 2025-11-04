@@ -1,17 +1,44 @@
 #### Legal
-[Disclaimer](DISCLAIMER.md) | [License](LICENSE)
+[Disclaimer](DISCLAIMER.md) | [Open Source License](LICENSE)
 
 # RMT-Setting
-**Read this in other languages: [中文](README.md).**
+**阅读中文说明: [中文](README.md)**
 
-## License
+## License Agreement
 
-The configuration files, content and resources in this project are licensed under the **CC BY-NC-SA 4.0** license.
+The configurations, content, and resources in this project are licensed under **CC BY-NC-SA 4.0**.
 
-- ✅ Free to use, share, and modify for educational/personal purposes
-- ✅ Attribution required
-- ✅ Derivatives must be shared under the same license
-- ❌ Commercial use prohibited (including selling, paywalls, paid services)
-- ❌ No proprietary redistribution or access restriction
+- ✅ Free to learn, share, and remix
+- ✅ Must give proper attribution
+- ✅ Derivative works must use the same license
+- ❌ Commercial use, selling, paid distribution, or usage in paid services is prohibited
+- ❌ Re-uploading in a closed or restricted-access system is prohibited
 
-Full License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+Full license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+## Download & Import RMT Configurations
+
+1. Browse this repository and find the `.rmt` configuration file you need
+2. Download the file to your computer
+3. Run the **RMT (Ruomengtu)** software
+4. Click the **Config Manager** button on the top right
+5. Select **Import Config** and choose your downloaded `.rmt` file
+
+## Upload RMT Configurations
+
+### Ruomengtu Community Group
+
+1. Contact a group admin and request to upload a shared config
+2. Follow admin guidance to prepare your config information
+3. After approval, the admin will upload your config to the repository
+
+### Open Source Repository Submission
+
+1. Fork the RMT-Setting repository
+2. Add your configuration according to the repository structure and rules
+3. Commit the changes to your repo and submit a **pull request** to RMT-Setting
+4. Your submission will be reviewed and merged upon approval
+
+---
+
+If you need help, feel free to ask in the community!
