@@ -88,9 +88,9 @@ footer a:hover {
     background: white;
     border-radius: 12px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
-    padding: 1.5rem;
+    padding: 1.6rem;
     /* 内边距略小一些 */
-    line-height: 1.5;
+    line-height: 1.6;
     color: #333;
     box-sizing: border-box;
 }
