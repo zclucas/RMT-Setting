@@ -1,186 +1,167 @@
 body {
-  font-family: "Segoe UI", sans-serif;
-  background: #f9fafb;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    background: #f9fafb;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-  text-align: center;
-  padding: 3rem 1rem 1rem;
+    text-align: center;
+    padding: 3rem 1rem 1rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 header p {
-  color: #555;
-  font-size: 1.1rem;
+    color: #555;
+    font-size: 1.1rem;
 }
 
 .category-container {
-  display: flex;
-  flex-wrap: wrap;          /* 自动换行 */
-  justify-content: center;  /* 居中对齐 */
-  gap: 1rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* 自动换行 */
+    justify-content: center;
+    /* 居中对齐 */
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* 控制每个卡片宽度，一行最多7个 */
 .category {
-  flex: 0 0 calc((100% - 6rem) / 7); /* 7个一行，减去间隙 */
-  max-width: 140px;                   /* 限制最大宽度 */
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding: 1.5rem 1rem;
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: all 0.2s ease;
+    flex: 0 0 calc((100% - 6rem) / 7);
+    /* 7个一行，减去间隙 */
+    max-width: 140px;
+    /* 限制最大宽度 */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
 }
 
 .category:hover {
-  background: #eaf3ff;
-  transform: translateY(-4px);
+    background: #eaf3ff;
+    transform: translateY(-4px);
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: auto;
-  font-size: 0.9rem;
-  color: #666;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 footer a {
-  color: #0078d7;
-  text-decoration: none;
+    color: #0078d7;
+    text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline;
-}
-
-.guide {
-  max-width: 1100px;
-  margin: 2rem auto 3rem;
-  padding: 0 1rem;
+    text-decoration: underline;
 }
 
 .guide-box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* 自动换行 */
+    gap: 2rem;
+    justify-content: center;
+    /* 居中显示 */
 }
 
 .guide-section {
-  flex: 1 1 480px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
-  padding: 2rem;
-  line-height: 1.8;
-  color: #333;
-  box-sizing: border-box;
+    flex: 1 1 300px;
+    /* 每块最小300px，自动扩展 */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    line-height: 1.8;
+    color: #333;
+    box-sizing: border-box;
 }
 
-.guide-section h2 {
-  border-left: 5px solid #0078d7;
-  padding-left: 10px;
-  color: #0078d7;
-  margin-top: 0;
-}
-
-.guide-section h3 {
-  margin-top: 1.2rem;
-  color: #444;
-}
-
-.guide-section ol {
-  margin-left: 1.5rem;
-}
-
-.guide-section code {
-  background: #f2f2f2;
-  padding: 2px 5px;
-  border-radius: 4px;
-}
-
+/* 表格样式 */
 .guide-section table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.guide-section th, .guide-section td {
-  border: 1px solid #ddd;
-  padding: 0.6rem 0.8rem;
-  text-align: center;
+.guide-section th,
+.guide-section td {
+    border: 1px solid #ddd;
+    padding: 0.6rem 0.8rem;
+    text-align: center;
 }
 
 .guide-section th {
-  background: #f0f4f8;
-  color: #0078d7;
+    background: #f0f4f8;
+    color: #0078d7;
 }
 
 .guide-section td a {
-  color: #0078d7;
-  text-decoration: none;
+    color: #0078d7;
+    text-decoration: none;
 }
 
 .guide-section td a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .guide-section blockquote {
-  background: #f2f8ff;
-  border-left: 4px solid #0078d7;
-  padding: 1rem;
-  margin: 1rem 0 0;
-  font-size: 0.95rem;
-  color: #333;
+    background: #f2f8ff;
+    border-left: 4px solid #0078d7;
+    padding: 1rem;
+    margin: 1rem 0 0;
+    font-size: 0.95rem;
+    color: #333;
 }
 
-/* 响应式调整：在窄屏下上下排列 */
-@media (max-width: 800px) {
-  .guide-box {
-    flex-direction: column;
-  }
+/* 响应式：屏幕窄时上下排列 */
+@media (max-width: 1000px) {
+    .guide-box {
+        flex-direction: column;
+    }
 }
 
 /* 响应式：屏幕小于1400px 一行最多5个 */
 @media (max-width: 1400px) {
-  .category {
-    flex: 0 0 calc((100% - 4rem) / 5);
-  }
+    .category {
+        flex: 0 0 calc((100% - 4rem) / 5);
+    }
 }
 
 /* 一行最多3个 */
 @media (max-width: 1000px) {
-  .category {
-    flex: 0 0 calc((100% - 2rem) / 3);
-  }
+    .category {
+        flex: 0 0 calc((100% - 2rem) / 3);
+    }
 }
 
 /* 一行最多2个 */
 @media (max-width: 600px) {
-  .category {
-    flex: 0 0 calc((100% - 1rem) / 2);
-  }
+    .category {
+        flex: 0 0 calc((100% - 1rem) / 2);
+    }
 }
 
 /* 单列显示 */
 @media (max-width: 400px) {
-  .category {
-    flex: 0 0 100%;
-  }
+    .category {
+        flex: 0 0 100%;
+    }
 }
