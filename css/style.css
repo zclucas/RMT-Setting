@@ -27,8 +27,9 @@ header p {
   grid-template-columns: repeat(7, 1fr); /* 一行固定7列 */
   gap: 1rem;
   padding: 2rem;
-  max-width: 1200px; /* 可以根据需要调整 */
+  max-width: 1200px; /* 根据需要调整 */
   margin: 0 auto;
+  justify-content: center; /* 没满7个时居中显示 */
 }
 
 .category {
@@ -120,24 +121,24 @@ footer a:hover {
 /* 响应式：屏幕窄时，减少列数 */
 @media (max-width: 1400px) {
   .category-container {
-    grid-template-columns: repeat(5, 1fr); /* 5列 */
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (max-width: 1000px) {
   .category-container {
-    grid-template-columns: repeat(3, 1fr); /* 3列 */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .category-container {
-    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 400px) {
   .category-container {
-    grid-template-columns: 1fr; /* 1列 */
+    grid-template-columns: 1fr;
   }
 }
