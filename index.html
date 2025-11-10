@@ -1,70 +1,105 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RMT-Setting（若梦兔配置）</title>
-  <link rel="icon" href="assets/icon.png" />
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMT-Setting（若梦兔配置）</title>
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>🐇 RMT-Setting</h1>
-    <p>免费、开放、非商业化的宏配置分享平台</p>
-  </header>
+    <header>
+        <h1>🐇 RMT-Setting</h1>
+        <p>免费、开放、非商业化的宏配置分享平台</p>
+    </header>
 
-  <main>
-    <section class="category-container">
-      <div class="category" data-page="case.html">📚 案例</div>
-      <div class="category" data-page="game.html">🎮 游戏</div>
-      <div class="category" data-page="general.html">⚙️ 通用</div>
-      <div class="category" data-page="study.html">🎓 网课</div>
-      <div class="category" data-page="office.html">💼 办公</div>
-      <div class="category" data-page="office.html">💼 办公</div>
-      <!-- 可继续添加 -->
-    </section>
+    <main>
+        <section class="category-container">
+            <div class="category" data-page="case.html">📚 案例</div>
+            <div class="category" data-page="game.html">🎮 游戏</div>
+            <div class="category" data-page="general.html">⚙️ 通用</div>
+            <div class="category" data-page="study.html">🎓 网课</div>
+            <div class="category" data-page="office.html">💼 办公</div>
+            <!-- 可继续添加 -->
+        </section>
 
-    <section class="guide">
-      <div class="guide-box">
-        <div class="guide-section left">
-          <h2>⚙️ RMT 配置下载与导入</h2>
-          <ol>
-            <li>在仓库中找到所需的 <code>.rmt</code> 配置文件并下载到本地</li>
-            <li>运行 <strong>若梦兔（RMT）</strong> 软件</li>
-            <li>点击右上角的 <strong>配置管理 → 导入配置</strong></li>
-            <li>选择下载的 <code>.rmt</code> 文件即可完成导入</li>
-          </ol>
-        </div>
+        <section class="guide">
+            <div class="guide-box">
+                <!-- 左侧：官方仓库信息 -->
+                <div class="guide-section left">
+                    <h2>🌐 官方软件仓库</h2>
+                    <p>你可以通过以下开源仓库获取 <strong>RMT（若梦兔）软件本体</strong>、<strong>使用说明</strong>、<strong>更新日志</strong> 等信息：</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>平台</th>
+                                <th>仓库地址</th>
+                                <th>特点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🐱 GitHub</td>
+                                <td><a href="https://github.com/zclucas/RMT" target="_blank">RMT (GitHub)</a></td>
+                                <td>国际访问速度更快</td>
+                            </tr>
+                            <tr>
+                                <td>🅶 Gitee</td>
+                                <td><a href="https://gitee.com/fateman/RMT" target="_blank">RMT (Gitee)</a></td>
+                                <td>国内访问更稳定</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <blockquote>
+                        💡 提示：<br>
+                        本仓库仅用于共享 <strong>RMT 宏配置（.rmt 文件）</strong>。<br>
+                        若需下载软件主体或查阅详细教程，请前往以上任一官方仓库。
+                    </blockquote>
+                </div>
 
-        <div class="guide-section right">
-          <h2>☁️ RMT 配置共享与上传</h2>
+                <!-- 右侧：原来的下载/共享内容 -->
+                <div class="guide-section right">
+                    <h2>⚙️ RMT 配置下载与导入</h2>
+                    <ol>
+                        <li>在仓库中找到所需的 <code>.rmt</code> 配置文件并下载到本地</li>
+                        <li>运行 <strong>若梦兔（RMT）</strong> 软件</li>
+                        <li>点击右上角的 <strong>配置管理 → 导入配置</strong></li>
+                        <li>选择下载的 <code>.rmt</code> 文件即可完成导入</li>
+                    </ol>
 
-          <h3>🧩 方式一（普通用户）</h3>
-          <ol>
-            <li>在对应配置下完善 <strong>使用说明 & 署名</strong> 文件内容</li>
-            <li>使用软件内的 <strong>导出配置</strong> 功能</li>
-            <li>将导出的 <code>.rmt</code> 文件发送到交流群中</li>
-            <li><strong>@群主或管理员</strong> 提交审核</li>
-            <li>建议在 <strong>QQ频道 → 若梦兔RMT → 共享仓库板块</strong> 发布信息</li>
-          </ol>
+                    <hr />
 
-          <h3>🧰 方式二（开发者 / 贡献者）</h3>
-          <ol>
-            <li><strong>Fork</strong> 本仓库（RMT-Setting）</li>
-            <li>按仓库目录结构上传你的配置文件</li>
-            <li>提交更新后向主仓库发起 <strong>Pull Request</strong></li>
-            <li>管理员审核通过后将合并入主仓库</li>
-            <li>建议在 <strong>QQ频道 → 若梦兔RMT → 共享仓库板块</strong> 发布信息</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-  </main>
+                    <h2>☁️ RMT 配置共享与上传</h2>
 
-  <footer>
-    <p>© 2025 RMT-Setting | 开源项目 <a href="https://github.com/zclucas/RMT-Setting" target="_blank">GitHub</a></p>
-  </footer>
+                    <h3>🧩 方式一（普通用户）</h3>
+                    <ol>
+                        <li>在对应配置下完善 <strong>使用说明 & 署名</strong> 文件内容</li>
+                        <li>使用软件内的 <strong>导出配置</strong> 功能</li>
+                        <li>将导出的 <code>.rmt</code> 文件发送到交流群中</li>
+                        <li><strong>@群主或管理员</strong> 提交审核</li>
+                        <li>建议在 <strong>QQ频道 → 若梦兔RMT → 共享仓库板块</strong> 发布信息</li>
+                    </ol>
 
-  <script src="js/main.js"></script>
+                    <h3>🧰 方式二（开发者 / 贡献者）</h3>
+                    <ol>
+                        <li><strong>Fork</strong> 本仓库（RMT-Setting）</li>
+                        <li>按仓库目录结构上传你的配置文件</li>
+                        <li>提交更新后向主仓库发起 <strong>Pull Request</strong></li>
+                        <li>管理员审核通过后将合并入主仓库</li>
+                        <li>建议在 <strong>QQ频道 → 若梦兔RMT → 共享仓库板块</strong> 发布信息</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 RMT-Setting | 开源项目 <a href="https://github.com/zclucas/RMT-Setting" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>

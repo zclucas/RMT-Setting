@@ -114,6 +114,42 @@ footer a:hover {
   border-radius: 4px;
 }
 
+.guide-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.guide-section th, .guide-section td {
+  border: 1px solid #ddd;
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+}
+
+.guide-section th {
+  background: #f0f4f8;
+  color: #0078d7;
+}
+
+.guide-section td a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.guide-section td a:hover {
+  text-decoration: underline;
+}
+
+.guide-section blockquote {
+  background: #f2f8ff;
+  border-left: 4px solid #0078d7;
+  padding: 1rem;
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
 /* 响应式调整：在窄屏下上下排列 */
 @media (max-width: 800px) {
   .guide-box {
