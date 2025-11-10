@@ -23,16 +23,19 @@ header p {
 }
 
 .category-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  display: flex;
+  flex-wrap: wrap;          /* 自动换行 */
+  justify-content: center;  /* 居中对齐 */
   gap: 1rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: center; /* 居中不足一行的卡片 */
 }
 
+/* 控制每个卡片宽度，一行最多7个 */
 .category {
+  flex: 0 0 calc((100% - 6rem) / 7); /* 7个一行，减去间隙 */
+  max-width: 140px;                   /* 限制最大宽度 */
   background: white;
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
@@ -118,27 +121,30 @@ footer a:hover {
   }
 }
 
-/* 响应式：屏幕窄时，减少列数 */
+/* 响应式：屏幕小于1400px 一行最多5个 */
 @media (max-width: 1400px) {
-  .category-container {
-    grid-template-columns: repeat(5, 1fr);
+  .category {
+    flex: 0 0 calc((100% - 4rem) / 5);
   }
 }
 
+/* 一行最多3个 */
 @media (max-width: 1000px) {
-  .category-container {
-    grid-template-columns: repeat(3, 1fr);
+  .category {
+    flex: 0 0 calc((100% - 2rem) / 3);
   }
 }
 
+/* 一行最多2个 */
 @media (max-width: 600px) {
-  .category-container {
-    grid-template-columns: repeat(2, 1fr);
+  .category {
+    flex: 0 0 calc((100% - 1rem) / 2);
   }
 }
 
+/* 单列显示 */
 @media (max-width: 400px) {
-  .category-container {
-    grid-template-columns: 1fr;
+  .category {
+    flex: 0 0 100%;
   }
 }
