@@ -63,3 +63,43 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.guide {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.guide h2 {
+  margin-top: 0;
+  border-left: 5px solid #0078d7;
+  padding-left: 10px;
+  color: #0078d7;
+}
+
+.guide h3 {
+  margin-top: 1.5rem;
+  color: #444;
+}
+
+.guide ol {
+  margin-left: 1.5rem;
+}
+
+.guide code {
+  background: #f2f2f2;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.guide hr {
+  border: none;
+  height: 1px;
+  background: #eee;
+  margin: 2rem 0;
+}
