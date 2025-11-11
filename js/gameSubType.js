@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 配置游戏数据
     const games = [
-        { name: "游戏1", image: "../images/game1.png", link: "game/testGame.html" },
+        { name: "二重螺旋", image: "../images/二重螺旋.png", link: "game/doubleSpiral.html" },
         { name: "游戏2", image: "images/game2.png", link: "https://example.com/game2" },
         { name: "游戏3", image: "images/game3.png", link: "https://example.com/game3" },
         { name: "游戏4", image: "images/game4.png", link: "https://example.com/game4" },
