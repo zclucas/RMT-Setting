@@ -3,16 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 配置游戏数据
     const games = [
-        { name: "二重螺旋", image: "../images/二重螺旋.png", link: "game/doubleSpiral.html" },
-        { name: "游戏2", image: "images/game2.png", link: "https://example.com/game2" },
-        { name: "游戏3", image: "images/game3.png", link: "https://example.com/game3" },
-        { name: "游戏4", image: "images/game4.png", link: "https://example.com/game4" },
-        { name: "游戏5", image: "images/game5.png", link: "https://example.com/game5" },
-        { name: "游戏6", image: "images/game6.png", link: "https://example.com/game6" },
-        { name: "游戏7", image: "images/game7.png", link: "https://example.com/game7" },
-        { name: "游戏8", image: "images/game8.png", link: "https://example.com/game8" },
-        { name: "游戏9", image: "images/game9.png", link: "https://example.com/game9" },
-        { name: "游戏10", image: "images/game10.png", link: "https://example.com/game10" }
+        { name: "二重螺旋", image: "../Images/Game/二重螺旋.png", link: "Game/DoubleSpiral.html" },
+        { name: "封叶三国", image: "../Images/Game/封叶三国.png", link: "Game/ThreeKingdoms.html" },
+        { name: "街霸6", image: "../Images/Game/街霸6.png", link: "Game/StreetFighter.html" },
+        { name: "永劫无间", image: "../Images/Game/永劫无间.png", link: "Game/Naraka.html" },
+        { name: "棕色尘埃2", image: "../Images/Game/棕色尘埃2.png", link: "Game/BrownDust2.html" },
+        { name: "GTA5", image: "../Images/Game/GTA5.png", link: "Game/GTA5.html" },
     ];
 
     games.forEach(game => {
