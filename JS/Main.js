@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const page = cat.dataset.page;
             if (page) {
                 // 加上 pages/ 前缀
-                window.location.href = `pages/${page}`;
+                window.location.href = `Pages/${page}`;
             }
         });
     });
