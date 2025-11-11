@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: #ffffff;
+    background: #fff;
     border-bottom: 2px solid #eee;
     text-align: center;
     padding: 1rem;
@@ -18,24 +18,19 @@ h1 {
     font-size: 1.6rem;
 }
 
-/* === 主容器 === */
-.case-container {
+.info-container {
     display: flex;
-    align-items: flex-start;
     gap: 10px;
     padding: 20px;
     background: #fafafa;
-
-    /* ✅ 最小高度填满屏幕可视区（减去header高度） */
     min-height: calc(100vh - 140px);
     align-items: stretch;
 }
 
-/* === 左侧案例列表 === */
-.case-list {
+.info-list {
     display: grid;
-    grid-template-columns: repeat(5, 200px); /* 每行固定5列，每列170px */
-    grid-auto-rows: 90px;                    /* 每行高度固定 */
+    grid-template-columns: repeat(5, 200px);
+    grid-auto-rows: 90px;
     gap: 6px;
     padding: 10px;
     background: #fff;
@@ -45,12 +40,9 @@ h1 {
     min-height: calc(100vh - 140px);
 }
 
-
-
-/* === 案例按钮 === */
-.case-button {
-    width: 170px;      /* ✅ 宽度增加，从150px改为170px */
-    height: 60px;     /* ✅ 固定高度 */
+.info-button {
+    width: 170px;
+    height: 60px;
     background: white;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -58,46 +50,43 @@ h1 {
     cursor: pointer;
     text-align: center;
     font-size: 0.95rem;
-    transition: all 0.2s ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s ease;
 }
 
-.case-button:hover {
+.info-button:hover {
     background: #e7f1ff;
     transform: translateY(-2px);
     border-color: #007bff;
 }
 
-.case-button.active {
+.info-button.active {
     background: #007bff;
     color: white;
     border-color: #007bff;
 }
 
-/* === 右侧详细信息 === */
-.case-detail {
+.info-detail {
     flex: 2;
     background: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-
-    /* ✅ 同样最小高度为屏幕高度，超出内容自然增加 */
     min-height: calc(100vh - 140px);
 }
 
-.case-detail h2 {
+.info-detail h2 {
     margin-top: 0;
 }
 
-.case-detail .info {
+.info-detail .info {
     margin-bottom: 10px;
 }
 
-.case-detail .steps {
+.info-detail .steps {
     background: #f7f7f7;
     padding: 10px;
     border-radius: 8px;

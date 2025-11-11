@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const caseList = document.getElementById("caseList");
-    const caseDetail = document.getElementById("caseDetail");
+    const infoList = document.getElementById("infoList");
+    const infoDetail = document.getElementById("infoDetail");
 
-    // 示例案例数据
-    const cases = [
+    const datas = [
         {
             id: "fun-switch",
             title: "功能切换",
@@ -50,44 +49,34 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             file: "../案例宏/点击-双击-长按/按键点击-双击-长按.rmt",
         },
-        // 可继续添加更多案例
+        // 可以继续添加更多条目
     ];
-    // 渲染左侧按钮
-    cases.forEach((item, index) => {
+
+    // 渲染左侧列表
+    datas.forEach((item, index) => {
         const btn = document.createElement("div");
-        btn.className = "case-button" + (index === 0 ? " active" : "");
+        btn.className = "info-button" + (index === 0 ? " active" : "");
         btn.textContent = item.title;
         btn.dataset.id = item.id;
-        caseList.appendChild(btn);
+        infoList.appendChild(btn);
     });
 
-    // 默认显示第一个案例
-    renderCase(cases[0]);
+    // 默认显示第一个条目
+    renderInfo(datas[0]);
 
-    // 点击切换案例
-    caseList.addEventListener("click", (e) => {
-        const target = e.target.closest(".case-button");
+    // 点击切换条目
+    infoList.addEventListener("click", (e) => {
+        const target = e.target.closest(".info-button");
         if (!target) return;
 
-        document.querySelectorAll(".case-button").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".info-button").forEach(b => b.classList.remove("active"));
         target.classList.add("active");
 
-        const data = cases.find(c => c.id === target.dataset.id);
-        renderCase(data);
+        const data = datas.find(c => c.id === target.dataset.id);
+        renderInfo(data);
     });
 
-    // 渲染右侧详细信息
-    function renderCase(data) {
-        // 作者信息
-        let authorHTML = "";
-        if (data.originalAuthor) {
-            authorHTML = `<p><strong>原作者：</strong>${data.originalAuthor}</p>
-                          <p><strong>作者：</strong>${data.author}</p>`;
-        } else {
-            authorHTML = `<p><strong>作者：</strong>${data.author}</p>`;
-        }
-
-        // 图片信息
+    function renderInfo(data) {
         let imagesHTML = "";
         if (data.images && data.images.length > 0) {
             imagesHTML = `<div class="images">
@@ -100,18 +89,18 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>`;
         }
 
-        caseDetail.innerHTML = `
+        infoDetail.innerHTML = `
             <h2>${data.title}</h2>
             <div class="info">
-                ${authorHTML}
-                <p><strong>功能简介：</strong>${data.feature}</p>
+                <p><strong>作者：</strong>${data.author}</p>
+                <p><strong>功能描述：</strong>${data.feature}</p>
             </div>
             <div class="steps">
-                <p><strong>操作说明：</strong></p>
+                <p><strong>操作步骤：</strong></p>
                 <ol>${data.steps.map(s => `<li>${s}</li>`).join("")}</ol>
             </div>
             ${imagesHTML}
-            <a class="download-btn" href="${data.file}" download>⬇️ 下载该配置</a>
+            <a class="download-btn" href="${data.file}" download>⬇️ 下载</a>
         `;
     }
 });
