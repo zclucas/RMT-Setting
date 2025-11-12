@@ -47,6 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
         renderInfo(data);
     });
 
+    document.body.addEventListener("click", e => {
+        const img = e.target.closest(".image-item img");
+        if (!img) return;
+
+        const overlay = Object.assign(document.createElement("div"), {
+            className: "img-overlay",
+            innerHTML: `<img src="${img.src}" alt="">`
+        });
+
+        document.body.appendChild(overlay);
+        overlay.addEventListener("click", () => overlay.remove());
+    });
+
     function renderInfo(data) {
         let imagesHTML = "";
         if (data.images && data.images.length > 0) {
