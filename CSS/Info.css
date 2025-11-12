@@ -44,29 +44,36 @@ h1 {
 .info-button {
     width: 170px;
     height: 60px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
+    background: linear-gradient(180deg, #ffffff, #f7f9fc);
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 12px;
     cursor: pointer;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: all 0.2s ease;
 }
 
 .info-button:hover {
-    background: #e7f1ff;
-    transform: translateY(-2px);
+    background: linear-gradient(180deg, #f0f6ff, #e6f0ff);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
     border-color: #007bff;
+    color: #007bff;
 }
 
 .info-button.active {
-    background: #007bff;
+    background: linear-gradient(135deg, #42e695, #3bb2b8);
     color: white;
-    border-color: #007bff;
+    border: none;
+    box-shadow: 0 4px 12px rgba(59, 178, 184, 0.35);
+    transform: translateY(-3px);
 }
 
 .info-detail {
@@ -94,24 +101,26 @@ h1 {
 }
 
 .download-btn {
-    position: absolute; /* ✅ 固定位置 */
+    position: absolute;
     top: 40px;
     right: 40px;
-    margin-top: 0; /* 移除原来的 margin-top */
-    padding: 12px 20px; /* ⬆️ 调大按钮高度 */
-    background: linear-gradient(135deg, #4a90e2, #007bff);
+    margin-top: 0;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #42e695, #3bb2b8); /* 💚 清新绿青渐变 */
     color: white;
+    border: none;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease;
+    box-shadow: 0 3px 8px rgba(59, 178, 184, 0.3); /* 柔和阴影 */
+    transition: all 0.25s ease;
 }
 
 .download-btn:hover {
-    background: linear-gradient(135deg, #3578c2, #0056b3);
+    background: linear-gradient(135deg, #34d89a, #2ea3a8); /* hover 稍深一点 */
     transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(59, 178, 184, 0.4);
 }
 
 .placeholder {

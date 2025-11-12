@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <ol>${data.steps.map(s => `<li>${s}</li>`).join("")}</ol>
             </div>
             ${imagesHTML}
-            <a class="download-btn" href="${data.file}" download>⬇️ 下载配置</a>
+            <a class="download-btn" href="${data.file}" download>⬇下载配置</a>
         `;
     }
 });
