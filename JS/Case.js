@@ -31,10 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 "2. 按下Esc 切换配置效果，此时按下K，输出10次B"
             ],
             file: "../案例宏/功能切换/功能切换.rmt",
-            // images: [
-            //     { name: "键盘鼠标设置", src: "../游戏宏/GTA5/GTA5PVP宏/键盘鼠标设置.JPG" },
-            //     { name: "汽车、摩托、船设置", src: "../游戏宏/GTA5/GTA5PVP宏/汽车、摩托、船设置.JPG" }
-            // ]
+            images: [
+                { name: "配图1", src: "../案例宏/功能切换/图1.png" },
+                { name: "配图2", src: "../案例宏/功能切换/图2.png" },
+                { name: "配图3", src: "../案例宏/功能切换/图3.png"  }
+            ]
         },
         {
             id: "mouse-back",
