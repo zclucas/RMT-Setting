@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             file: "../办公宏/仓库管理员更新库存/仓库管理员更新库存.rmt",
             images: [
                 { name: "配图1", src: "../办公宏/仓库管理员更新库存/配图1.png" },
+                { name: "配图2", src: "../办公宏/仓库管理员更新库存/配图2.png" },
             ]
         },
         // 可以继续添加更多条目

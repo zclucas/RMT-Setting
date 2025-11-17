@@ -45,7 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
             steps: [
                 "按键k触发后，指令执行完毕后，鼠标会回到触发时的位置",
             ],
-            file: "../案例宏/鼠标复位/鼠标复位.rmt"
+            file: "../案例宏/鼠标复位/鼠标复位.rmt",
+            images: [
+                { name: "配图", src: "../案例宏/功能切换/配图.png" },
+            ]
         },
         {
             id: "combo-key",
