@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             file: "../案例宏/鼠标复位/鼠标复位.rmt",
             images: [
-                { name: "配图", src: "../案例宏/功能切换/配图.png" },
+                { name: "配图", src: "../案例宏/鼠标复位/配图.png" },
             ]
         },
         {
@@ -56,7 +56,18 @@ document.addEventListener("DOMContentLoaded", () => {
             author: "若梦兔",
             feature: "自定义任意组合按键触发宏",
             steps: ["同时按下空格+A触发宏"],
-            file: "../案例宏/自定义组合按键/自定义组合按键.rmt",
+            file: "../案例宏/自定义组合按键触发/自定义组合按键触发.rmt",
+            images: [
+                { name: "配图1", src: "../案例宏/自定义组合按键触发/图1.png" },
+                { name: "配图2", src: "../案例宏/自定义组合按键触发/图2.png" },
+                { name: "配图3", src: "../案例宏/自定义组合按键触发/图3.png" },
+                { name: "配图4", src: "../案例宏/自定义组合按键触发/图4.png" },
+                { name: "配图5", src: "../案例宏/自定义组合按键触发/图5.png" },
+                { name: "配图6", src: "../案例宏/自定义组合按键触发/图6.png" },
+                { name: "配图7", src: "../案例宏/自定义组合按键触发/图7.png" },
+                { name: "配图8", src: "../案例宏/自定义组合按键触发/图8.png" },
+                { name: "设置补充说明", src: "../案例宏/按键点击-双击-长按/设置补充说明.png" },
+            ]
         },
         {
             id: "multiple-trigger",
