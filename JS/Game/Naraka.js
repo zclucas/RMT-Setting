@@ -21,9 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
             //     { name: "汽车、摩托、船设置", src: "../游戏宏/GTA5/GTA5PVP宏/汽车、摩托、船设置.JPG" }
             // ]
         },
+        {
+            id: "噩梦火&斩妖台",
+            title: "噩梦火&斩妖台",
+            author: "萝卜",
+            feature: "挂机清疲劳",
+            steps: [
+                "适用2k屏幕，开始关卡，进入战斗锁定后，再按开关键"
+            ],
+            file: "../../游戏宏/永劫无间/噩梦火&斩妖台/RMT默认配置.rmt",
+        },
         // 可以继续添加更多条目
     ];
-
 
     // 渲染左侧列表
     datas.forEach((item, index) => {
