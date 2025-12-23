@@ -9,7 +9,7 @@ body {
 
 header {
     text-align: center;
-    padding: 3rem 1rem 1rem;
+    padding: 1rem 1rem 1rem;
 }
 
 header h1 {
@@ -29,7 +29,7 @@ header p {
     justify-content: center;
     /* 居中对齐 */
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
