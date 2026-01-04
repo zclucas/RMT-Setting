@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "星际争霸", image: "../Images/Game/星际争霸.png", link: "Game/StarCraft.html" },
         { name: "永劫无间", image: "../Images/Game/永劫无间.png", link: "Game/Naraka.html" },
         { name: "棕色尘埃2", image: "../Images/Game/棕色尘埃2.png", link: "Game/BrownDust2.html" },
+        { name: "CSGO2", image: "../Images/Game/CSGO2.png", link: "Game/CSGO2.html" },
         { name: "GTA5", image: "../Images/Game/GTA5.png", link: "Game/GTA5.html" },
     ];
 
