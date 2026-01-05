@@ -19,15 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             file: "../../游戏宏/GTA5/GTA5PvP宏/GTA5PvP宏.rmt",
             images: [
-                { name: "飞行载具设置", src: "../../游戏宏/GTA5/GTA5PVP宏/飞行载具设置.JPG" },
-                { name: "键盘鼠标设置", src: "../../游戏宏/GTA5/GTA5PVP宏/键盘鼠标设置.JPG" },
-                { name: "汽车、摩托、船设置", src: "../../游戏宏/GTA5/GTA5PVP宏/汽车、摩托、船设置.JPG" },
-                { name: "手机设置", src: "../../游戏宏/GTA5/GTA5PVP宏/手机设置.JPG" },
-                { name: "通用设置", src: "../../游戏宏/GTA5/GTA5PVP宏/通用设置.JPG" },
-                { name: "通用载具设置", src: "../../游戏宏/GTA5/GTA5PVP宏/通用载具设置.JPG" },
-                { name: "图像设置", src: "../../游戏宏/GTA5/GTA5PVP宏/图像设置.JPG" },
-                { name: "武器选择", src: "../../游戏宏/GTA5/GTA5PVP宏/武器选择.JPG" },
-                { name: "在线模式设置", src: "../../游戏宏/GTA5/GTA5PVP宏/在线模式设置.JPG" },
+                { name: "飞行载具设置", src: "../../游戏宏/GTA5/GTA5PvP宏/飞行载具设置.JPG" },
+                { name: "键盘鼠标设置", src: "../../游戏宏/GTA5/GTA5PvP宏/键盘鼠标设置.JPG" },
+                { name: "汽车、摩托、船设置", src: "../../游戏宏/GTA5/GTA5PvP宏/汽车、摩托、船设置.JPG" },
+                { name: "手机设置", src: "../../游戏宏/GTA5/GTA5PvP宏/手机设置.JPG" },
+                { name: "通用设置", src: "../../游戏宏/GTA5/GTA5PvP宏/通用设置.JPG" },
+                { name: "通用载具设置", src: "../../游戏宏/GTA5/GTA5PvP宏/通用载具设置.JPG" },
+                { name: "图像设置", src: "../../游戏宏/GTA5/GTA5PvP宏/图像设置.JPG" },
+                { name: "武器选择", src: "../../游戏宏/GTA5/GTA5PvP宏/武器选择.JPG" },
+                { name: "在线模式设置", src: "../../游戏宏/GTA5/GTA5PvP宏/在线模式设置.JPG" },
             ]
         },
         // 可以继续添加更多条目
