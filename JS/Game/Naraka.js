@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const datas = [
         {
             id: "emeng",
-            title: "征神噩梦火万象",
+            title: "征神-噩梦火",
             // originalAuthor: "若梦兔",
             author: "跑路王",
             feature: "挂坤清疲劳",
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             steps: [
                 "适用2k屏幕，开始关卡，进入战斗锁定后，再按开关键"
             ],
-            file: "../../游戏宏/永劫无间/噩梦火&斩妖台/RMT默认配置.rmt",
+            file: "../../游戏宏/永劫无间/噩梦火&斩妖台/噩梦火&斩妖台.rmt",
         },
         // 可以继续添加更多条目
     ];
