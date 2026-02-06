@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "封叶三国", image: "../Images/Game/封叶三国.png", link: "Game/ThreeKingdoms.html" },
         { name: "激战2", image: "../Images/Game/激战2.png", link: "Game/FierceFighting2.html" },
         { name: "街霸6", image: "../Images/Game/街霸6.png", link: "Game/StreetFighter.html" },
-        { name: "魔兽世界", image: "../Images/Game/魔兽世界.png", link: "Game/StreetFighter.html" },
+        { name: "魔兽世界", image: "../Images/Game/魔兽世界.png", link: "Game/MonsterWorld.html" },
         { name: "桃花源记2", image: "../Images/Game/桃花源记2.png", link: "Game/PeachBlossomLand2.html" },
         { name: "星际争霸", image: "../Images/Game/星际争霸.png", link: "Game/StarCraft.html" },
         { name: "永劫无间", image: "../Images/Game/永劫无间.png", link: "Game/Naraka.html" },
