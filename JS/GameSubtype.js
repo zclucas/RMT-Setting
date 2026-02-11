@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "GTA5", image: "../Images/Game/GTA5.png", link: "Game/GTA5.html" },
         { name: "地狱潜兵2", image: "../Images/Game/HELLDIVERS2.png", link: "Game/HELLDIVERS2.html" },
         { name: "盲盒派对", image: "../Images/Game/盲盒派对.png", link: "Game/BlindBox.html" },
+        { name: "第五人格", image: "../Images/Game/第五人格.png", link: "Game/IdentityⅤ.html" },
     ];
 
     games.forEach(game => {
