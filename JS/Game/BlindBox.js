@@ -21,9 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 "滚轮选角色：使用后解锁滚轮选角色而不报错"
             ],
             file: "../../游戏宏/盲盒派对/自动日常/盲盒派对游戏自动化.rmt",
-            images: [
-                { name: "水晶切换", src: "../../游戏宏/棕色尘埃2/自动日常/水晶切换.jpg" },
-            ]
         },
         // 可以继续添加更多条目
     ];
