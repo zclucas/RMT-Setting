@@ -1,0 +1,95 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const infoList = document.getElementById("infoList");
+    const infoDetail = document.getElementById("infoDetail");
+
+    const datas = [
+        {
+            id: "auto-work",
+            title: "自动日常",
+            // originalAuthor: "若梦兔",
+            author: "Nimoll",
+            feature: "减少游戏盲盒派对的重复性无意义操作，做日常，自动打关，过剧情等。可滚轮选择角色（需先使用菜单宏解锁【操作说明9】不然会报错），右键卖出角色，简化操作难度。功能全面，涵盖游戏内几乎所有需要用到宏的地方",
+            steps: [
+                "适配笔记本2.5k（2560*1600）屏幕，只能前台操作。因较复杂，其他分辨率自行调整难度较高，已将部分操作拆开到宏页面中以降低调整难度，单像素颜色识别也在文字识别中加了注释。",
+                "用任意模拟器打开游戏均可，需要调整各个宏中的前台，模拟器需要全屏无黑边且关掉模拟器esc退出全屏功能。为了防止图片丢失，只使用了颜色，文本识别，无图片识别。",
+                "按下右ALT触发菜单宏。",
+                "菜单宏中，日常可以在游戏内任何页面启动，自动做日常。需要注意的是，体力满时默认会刷红徽章清体力（前七大关卡最后一关）若未通关可能会出bug，需要前往宏页面/日常一次性操作/找到体力判定的宏操作右键选择跳过；指令会每天自动给等级最低的角色升一级以完成日常任务，遇到突破情况也会自动突破并升级，不需要也可以跳过；创意工坊需要在挑战时首个选择的角色放可以秒杀敌人的角色，推荐贪吃天使；运行过程如出现反复进入创意工坊属正常情况，无需理会。",
+                "自动下一关，下一波，种植：可在关卡开始/进行中/结算中使用，可同时使用。自动下一波同时会调整三倍速，如有boss出现会停止下一波；自动种植会将首个植物种在第一列的2，4行，以便于用打三行植物的挂机过简单关卡。",
+                "过事件消息：需要点开事件消息再启动。",
+                "过剧情：需要在选择章节后启动，会过完当前章节的所有剧情，需手动切换章节。",
+                "放置作战挑战：需在放置作战页面启动，是为了后面无官方自动挑战的关卡设置的自动挑战。",
+                "滚轮选角色：使用后解锁滚轮选角色而不报错"
+            ],
+            file: "../../游戏宏/盲盒派对/自动日常/盲盒派对游戏自动化.rmt",
+            images: [
+                { name: "水晶切换", src: "../../游戏宏/棕色尘埃2/自动日常/水晶切换.jpg" },
+            ]
+        },
+        // 可以继续添加更多条目
+    ];
+
+    // 渲染左侧列表
+    datas.forEach((item, index) => {
+        const btn = document.createElement("div");
+        btn.className = "info-button" + (index === 0 ? " active" : "");
+        btn.textContent = item.title;
+        btn.dataset.id = item.id;
+        infoList.appendChild(btn);
+    });
+
+    // 默认显示第一个条目
+    renderInfo(datas[0]);
+
+    // 点击切换条目
+    infoList.addEventListener("click", (e) => {
+        const target = e.target.closest(".info-button");
+        if (!target) return;
+
+        document.querySelectorAll(".info-button").forEach(b => b.classList.remove("active"));
+        target.classList.add("active");
+
+        const data = datas.find(c => c.id === target.dataset.id);
+        renderInfo(data);
+    });
+
+    document.body.addEventListener("click", e => {
+        const img = e.target.closest(".image-item img");
+        if (!img) return;
+
+        const overlay = Object.assign(document.createElement("div"), {
+            className: "img-overlay",
+            innerHTML: `<img src="${img.src}" alt="">`
+        });
+
+        document.body.appendChild(overlay);
+        overlay.addEventListener("click", () => overlay.remove());
+    });
+
+    function renderInfo(data) {
+        let imagesHTML = "";
+        if (data.images && data.images.length > 0) {
+            imagesHTML = `<div class="images">
+                ${data.images.map(img => `
+                    <div class="image-item">
+                        <p>${img.name}</p>
+                        <img src="${img.src}" alt="${img.name}" />
+                    </div>
+                `).join("")}
+            </div>`;
+        }
+
+        infoDetail.innerHTML = `
+            <h2>${data.title}</h2>
+            <div class="info">
+                <p><strong>作者：</strong>${data.author}</p>
+                <p><strong>功能描述：</strong>${data.feature}</p>
+            </div>
+            <div class="steps">
+                <p><strong>操作步骤：</strong></p>
+                <ol>${data.steps.map(s => `<li>${s}</li>`).join("")}</ol>
+            </div>
+            ${imagesHTML}
+            <a class="download-btn" href="${data.file}" download>⬇下载配置</a>
+        `;
+    }
+});
