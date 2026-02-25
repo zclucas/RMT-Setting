@@ -4,42 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const datas = [
         {
-            id: "快捷呼叫",
-            title: "快捷呼叫",
-            author: "Danny",
-            feature: "快捷呼叫",
+            id: "auto-work",
+            title: "42伊冯飞天",
+            author: "uvycriss",
+            feature: "终末地42伊冯飞天",
             steps: [
-                "呼叫键改为上下左右",
+                "起跳后长按z键，42伊冯在1,2号位即可",
             ],
-            file: "../../游戏宏/Helldivers2/快捷呼叫/HELLDIVERS2.rmt",
-            // images: [
-            //     { name: "键盘鼠标设置", src: "../游戏宏/GTA5/GTA5PVP宏/键盘鼠标设置.JPG" },
-            //     { name: "汽车、摩托、船设置", src: "../游戏宏/GTA5/GTA5PVP宏/汽车、摩托、船设置.JPG" }
-            // ]
+            file: "../../游戏宏/终末地/42伊冯飞天/终末地宏脚本.rmt",
         },
-        {
-            id: "一键搓球1",
-            title: "一键搓球",
-            author: "Eriri",
-            feature: "一键搓球",
-            steps: [
-                "注意 搓球键为alt 需要更改请自行修改",
-            ],
-            file: "../../游戏宏/Helldivers2/一键搓球1/绝地潜兵.rmt",
-        },
-        {
-            id: "一键搓球2",
-            title: "一键搓球",
-            author: "绫地宁宁",
-            feature: "一键搓球",
-            steps: [
-                "截止2.22日 目前全搓球都有了",
-                "做了大致分类 其中呼叫战备的按键为alt 请自行更改",
-                "个人常用F1-4来使用一键搓球",
-            ],
-            file: "../../游戏宏/Helldivers2/一键搓球2/绝地潜兵2.rmt",
-        }
-
         // 可以继续添加更多条目
     ];
 

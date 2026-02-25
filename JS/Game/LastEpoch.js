@@ -4,42 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const datas = [
         {
-            id: "快捷呼叫",
-            title: "快捷呼叫",
-            author: "Danny",
-            feature: "快捷呼叫",
+            id: "Psyche1917",
+            title: "自动日常",
+            author: "Psyche1917",
+            feature: "一些自用脚本，仅适用S3赛季",
             steps: [
-                "呼叫键改为上下左右",
+                "需要配合萌爸mod使用",
+                "自动转移仓库部分并非萌爸提供的功能, 也不方便分享，思路通用",
+                "萌爸mod只需改改按键一样可用"
             ],
-            file: "../../游戏宏/Helldivers2/快捷呼叫/HELLDIVERS2.rmt",
-            // images: [
-            //     { name: "键盘鼠标设置", src: "../游戏宏/GTA5/GTA5PVP宏/键盘鼠标设置.JPG" },
-            //     { name: "汽车、摩托、船设置", src: "../游戏宏/GTA5/GTA5PVP宏/汽车、摩托、船设置.JPG" }
-            // ]
+            file: "../../游戏宏/最后纪元/自用脚本/最后纪元.rmt",
         },
-        {
-            id: "一键搓球1",
-            title: "一键搓球",
-            author: "Eriri",
-            feature: "一键搓球",
-            steps: [
-                "注意 搓球键为alt 需要更改请自行修改",
-            ],
-            file: "../../游戏宏/Helldivers2/一键搓球1/绝地潜兵.rmt",
-        },
-        {
-            id: "一键搓球2",
-            title: "一键搓球",
-            author: "绫地宁宁",
-            feature: "一键搓球",
-            steps: [
-                "截止2.22日 目前全搓球都有了",
-                "做了大致分类 其中呼叫战备的按键为alt 请自行更改",
-                "个人常用F1-4来使用一键搓球",
-            ],
-            file: "../../游戏宏/Helldivers2/一键搓球2/绝地潜兵2.rmt",
-        }
-
         // 可以继续添加更多条目
     ];
 
