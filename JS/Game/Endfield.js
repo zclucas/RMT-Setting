@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             steps: [
                 "起跳后长按z键，42伊冯在1,2号位即可",
             ],
-            file: "../../游戏宏/终末地/42伊冯飞天/终末地宏脚本.rmt",
+            file: "../../游戏宏/终末地/42伊冯飞天/终末地.rmt",
         },
         // 可以继续添加更多条目
     ];
