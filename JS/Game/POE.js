@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const datas = [
         {
             id: "auto-work",
-            title: "自动日常",
+            title: "刀阵",
             // originalAuthor: "若梦兔",
             author: "GG",
             feature: "流放之路刀阵宏",
