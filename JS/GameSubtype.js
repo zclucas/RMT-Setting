@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "终末地", image: "../Images/Game/终末地.png", link: "Game/Endfield.html" },
         { name: "最后纪元", image: "../Images/Game/最后纪元.png", link: "Game/LastEpoch.html" },
         { name: "流放之路", image: "../Images/Game/流放之路.png", link: "Game/POE.html" },
+        { name: "洛克王国世界", image: "../Images/Game/洛克王国世界.png", link: "Game/洛克王国世界.html" },
     ];
 
     games.forEach(game => {
