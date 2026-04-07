@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>洛克王国世界</title>
+  <title>星际争霸</title>
   <link rel="icon" href="../../Images/Icon.png" />
   <link rel="stylesheet" href="../../CSS/Info.css" />
 </head>
 
 <body>
   <header>
-    <h1>洛克王国世界</h1>
+    <h1>星际争霸</h1>
   </header>
 
   <main class="info-container">
@@ -24,23 +24,53 @@
     </div>
   </main>
 
-  <script>document.addEventListener("DOMContentLoaded", () => {
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
       const infoList = document.getElementById("infoList");
       const infoDetail = document.getElementById("infoDetail");
 
       const datas = [
         {
-          id: "切队+换宠+自动技能+过剧情",
-          title: "切队+换宠+自动技能+过剧情",
+          id: "快速作弊",
+          title: "快速作弊",
           // originalAuthor: "若梦兔",
-          author: "Nimoll",
-          feature: "为游戏洛克王国世界添加没有的快捷按键，鼠标滚轮选择宠物，ad按键切换队伍，空格确定传送，自动过剧情，迪莫和燃薪虫自动放技能",
+          author: "≡ω≡",
+          feature: "快速输入作弊指令",
           steps: [
-            "适配2.5k，即2560*1600分辨率",
-            "切换队伍功能需要在按p后出现的小队页面使用，需要把识别的文字改为你的小队名字的第一个字，默认为大世界小队中的”大“字",
-            "按下右alt可在菜单宏开启自动过剧情功能和放技能功能，只支持迪莫一直放折射和燃薪虫重复点燃和充分燃烧"
+            "Numpad1（小键盘1）   所有单位无敌",
+            "Numpad2（小键盘2）   增加10,000矿物和高能瓦斯",
+            "Numpad3（小键盘3）   加快建筑速度",
+            "Numpad4（小键盘4）   开启全地图视野",
           ],
-          file: "../../游戏宏/洛克王国世界/切队伍-换宠物/洛克王国世界.rmt",
+          file: "../../游戏宏/星际争霸/快速作弊/星际争霸作弊指令.rmt",
+          // images: [
+          //     { name: "键盘鼠标设置", src: "../游戏宏/GTA5/GTA5PVP宏/键盘鼠标设置.JPG" },
+          //     { name: "汽车、摩托、船设置", src: "../游戏宏/GTA5/GTA5PVP宏/汽车、摩托、船设置.JPG" }
+          // ]
+        },
+        {
+          id: "不死突袭3-自动加弹",
+          title: "不死突袭3-自动加弹",
+          author: "光H暗",
+          feature: "机枪手角色弹药掌控天赋自动加弹",
+          steps: [
+            "按一下小键盘0开启再按一下结束",
+            "回车键打开聊天框时会结束自动加弹,需要再次按小键盘0开启",
+            "前台选择了星际争霸2,在游戏内生效",
+            "添加了&x筛选数字避免识别错误导致的程序终止",
+          ],
+          file: "../../游戏宏/星际争霸/自动加弹/ua3AR.rmt",
+        },
+        {
+          id: "不死突袭3-前线角色快捷设置",
+          title: "不死突袭3-前线角色快捷设置",
+          author: "光H暗",
+          feature: "不死突袭3前线角色快捷设置",
+          steps: [
+            "小键盘1到9选择飞机方向;",
+            "小键盘0设置两种火炮模式",
+          ],
+          file: "../../游戏宏/星际争霸/角色快捷设置/ua3前线.rmt",
         },
         // 可以继续添加更多条目
       ];

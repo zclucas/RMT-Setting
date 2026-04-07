@@ -1,36 +1,61 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const infoList = document.getElementById("infoList");
-    const infoDetail = document.getElementById("infoDetail");
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-    const datas = [
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>终末地</title>
+  <link rel="icon" href="../../Images/Icon.png" />
+  <link rel="stylesheet" href="../../CSS/Info.css" />
+</head>
+
+<body>
+  <header>
+    <h1>终末地</h1>
+  </header>
+
+  <main class="info-container">
+    <!-- 左侧列表 -->
+    <div id="infoList" class="info-list"></div>
+
+    <!-- 右侧详细信息 -->
+    <div id="infoDetail" class="info-detail">
+      <p class="placeholder">点击左侧条目查看详细内容</p>
+    </div>
+  </main>
+
+  <script>document.addEventListener("DOMContentLoaded", () => {
+      const infoList = document.getElementById("infoList");
+      const infoDetail = document.getElementById("infoDetail");
+
+      const datas = [
         {
-            id: "鬼泣-鬼影闪柔化",
-            title: "鬼泣-鬼影闪柔化",
-            // originalAuthor: "若梦兔",
-            author: "盐焗鸡",
-            feature: "鬼泣各技能 {鬼斩,鬼影鞭,鬼斩狂怒,冥炎斩} 揉鬼影闪，鬼影闪冷却时防抖动。",
-            steps: [
-                "按图片ASDF技能中任意技能，即可完成Q的释放。",
-            ],
-            file: "../../游戏宏/DNF/鬼泣-鬼影闪柔化/鬼泣-鬼影闪柔化.rmt",
+          id: "auto-work",
+          title: "42伊冯飞天",
+          author: "uvycriss",
+          feature: "终末地42伊冯飞天",
+          steps: [
+            "起跳后长按z键，42伊冯在1,2号位即可",
+          ],
+          file: "../../游戏宏/终末地/42伊冯飞天/终末地.rmt",
         },
         // 可以继续添加更多条目
-    ];
+      ];
 
-    // 渲染左侧列表
-    datas.forEach((item, index) => {
+      // 渲染左侧列表
+      datas.forEach((item, index) => {
         const btn = document.createElement("div");
         btn.className = "info-button" + (index === 0 ? " active" : "");
         btn.textContent = item.title;
         btn.dataset.id = item.id;
         infoList.appendChild(btn);
-    });
+      });
 
-    // 默认显示第一个条目
-    renderInfo(datas[0]);
+      // 默认显示第一个条目
+      renderInfo(datas[0]);
 
-    // 点击切换条目
-    infoList.addEventListener("click", (e) => {
+      // 点击切换条目
+      infoList.addEventListener("click", (e) => {
         const target = e.target.closest(".info-button");
         if (!target) return;
 
@@ -39,25 +64,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const data = datas.find(c => c.id === target.dataset.id);
         renderInfo(data);
-    });
+      });
 
-    document.body.addEventListener("click", e => {
+      document.body.addEventListener("click", e => {
         const img = e.target.closest(".image-item img");
         if (!img) return;
 
         const overlay = Object.assign(document.createElement("div"), {
-            className: "img-overlay",
-            innerHTML: `<img src="${img.src}" alt="">`
+          className: "img-overlay",
+          innerHTML: `<img src="${img.src}" alt="">`
         });
 
         document.body.appendChild(overlay);
         overlay.addEventListener("click", () => overlay.remove());
-    });
+      });
 
-    function renderInfo(data) {
+      function renderInfo(data) {
         let imagesHTML = "";
         if (data.images && data.images.length > 0) {
-            imagesHTML = `<div class="images">
+          imagesHTML = `<div class="images">
                 ${data.images.map(img => `
                     <div class="image-item">
                         <p>${img.name}</p>
@@ -80,5 +105,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ${imagesHTML}
             <a class="download-btn" href="${data.file}" download>⬇下载配置</a>
         `;
-    }
-});
+      }
+    });
+  </script>
+</body>
+
+</html>
