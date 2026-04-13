@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "流放之路", image: "../Images/Game/流放之路.png", link: "Game/流放之路.html" },
         { name: "洛克王国世界", image: "../Images/Game/洛克王国世界.png", link: "Game/洛克王国世界.html" },
         { name: "盲盒派对", image: "../Images/Game/盲盒派对.png", link: "Game/盲盒派对.html" },
+        { name: "鸣潮", image: "../Images/Game/鸣潮.png", link: "Game/鸣潮.html" },
         { name: "魔兽世界", image: "../Images/Game/魔兽世界.png", link: "Game/魔兽世界.html" },
         { name: "逆战", image: "../Images/Game/逆战.png", link: "Game/逆战.html" },
         { name: "桃花源记2", image: "../Images/Game/桃花源记2.png", link: "Game/桃花源记2.html" },

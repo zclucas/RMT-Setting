@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>无限暖暖</title>
+  <title>鸣潮</title>
   <link rel="icon" href="../../Images/Icon.png" />
   <link rel="stylesheet" href="../../CSS/Info.css" />
 </head>
 
 <body>
   <header>
-    <h1>无限暖暖</h1>
+    <h1>鸣潮</h1>
   </header>
 
   <main class="info-container">
@@ -30,15 +30,17 @@
 
       const datas = [
         {
-          id: "快捷操作",
-          title: "快捷操作",
+          id: "ytt",
+          title: "自动推进剧情",
           // originalAuthor: "若梦兔",
-          author: "小塘",
-          feature: "1、鸟套无限飞 2、快捷喂鱼 3、昔涟演奏",
+          author: "ytt",
+          feature: "自动推进剧情，分为遇到选项会等待和无视选项直接继续两种可自行选择",
           steps: [
-            "1、鸟套无限飞 2、快捷喂鱼 3、昔涟演奏",
+            "屏幕规格：2560*1440_全屏",
+            "使用方法：进游戏直接全程开启即可",
+            "功能实现原理：宏会每隔5秒读取一次屏幕检测是否进入剧情，确认进入剧情后剧情后每隔1秒检测是否出现对话按键，发现选项只有一个会延迟1秒后按下，两个或以上则会等待玩家操作。一旦退出剧情宏会自动切换回5秒一读屏，不会出现角色正常走路遇到个F键就按的情况。",
           ],
-          file: "../../游戏宏/无限暖暖/快捷操作/无限暖暖.rmt",
+          file: "../../游戏宏/鸣潮/自动剧情/鸣潮自动剧情.rmt",
         },
         // 可以继续添加更多条目
       ];
