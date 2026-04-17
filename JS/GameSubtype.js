@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "CSGO2", image: "../Images/Game/CSGO2.png", link: "Game/CSGO2.html" },
         { name: "DNF", image: "../Images/Game/DNF.png", link: "Game/DNF.html" },
         { name: "GTA5", image: "../Images/Game/GTA5.png", link: "Game/GTA5.html" },
+        { name: "PUBG", image: "../Images/Game/PUBG.png", link: "Game/PUBG.html" },
     ];
 
     games.forEach(game => {
