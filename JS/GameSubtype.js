@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 配置游戏数据
     const games = [
+        { name: "地平线6", image: "../Images/Game/地平线6.png", link: "Game/地平线6.html" },
         { name: "第五人格", image: "../Images/Game/第五人格.png", link: "Game/第五人格.html" },
         { name: "二重螺旋", image: "../Images/Game/二重螺旋.png", link: "Game/二重螺旋.html" },
         { name: "封叶三国", image: "../Images/Game/封叶三国.png", link: "Game/封叶三国.html" },
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "鸣潮", image: "../Images/Game/鸣潮.png", link: "Game/鸣潮.html" },
         { name: "魔兽世界", image: "../Images/Game/魔兽世界.png", link: "Game/魔兽世界.html" },
         { name: "逆战", image: "../Images/Game/逆战.png", link: "Game/逆战.html" },
+        { name: "守了个桥", image: "../Images/Game/守了个桥.png", link: "Game/守了个桥.html" },
         { name: "桃花源记2", image: "../Images/Game/桃花源记2.png", link: "Game/桃花源记2.html" },
         { name: "无限暖暖", image: "../Images/Game/无限暖暖.png", link: "Game/无限暖暖.html" },
         { name: "星际争霸", image: "../Images/Game/星际争霸.png", link: "Game/星际争霸.html" },
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "DNF", image: "../Images/Game/DNF.png", link: "Game/DNF.html" },
         { name: "GTA5", image: "../Images/Game/GTA5.png", link: "Game/GTA5.html" },
         { name: "PUBG", image: "../Images/Game/PUBG.png", link: "Game/PUBG.html" },
+        { name: "QQ飞车", image: "../Images/Game/QQ飞车.png", link: "Game/QQ飞车.html" },
     ];
 
     games.forEach(game => {
